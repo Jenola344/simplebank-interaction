@@ -1,16 +1,7 @@
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-contract SimpleBank {
-    mapping(address => uint256) public balances;
-
-    function deposit() public payable {
-        balances[msg.sender] += msg.value;
-    }
-
-    function withdraw(uint amount) public {
-        require(balances[msg.sender] >= amount, "Not enough funds");
-        balances[msg.sender] -= amount;
-        payable(msg.sender).transfer(amount);
-    }
-}
+hat the path is correct and try again.
+At line:1 char:1
++ contract balance: 0.00002 ETH
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (contract:String) [], CommandNotFoundException     
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
